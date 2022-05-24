@@ -1,0 +1,73 @@
+/*Operating area*/
+.operation {
+    float: right;
+    padding: 5px;
+    width: 560px;
+    height: 350px;
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(201, 41, 41, 0.5);
+}
+
+.cabecalho h1 {
+    text-align: center;
+}
+
+.tela {
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+    margin: 0px auto -20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.operating-area {
+    width: 100%;
+    display: grid;
+    margin: 5% auto;
+    grid-template-columns: 1fr;
+}
+
+.typing-field {
+    display: block;
+    text-align: center;
+}
+
+.camp-id {
+    display: inline;
+    padding: 3%;
+    text-align: center;
+}
+
+.valor {
+
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.de,.para {
+    width: 50px;
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.calc,
+.reset {
+    width: 50%;
+    margin: 1px auto;
+    border-radius: 10px;
+    padding: 10px;
+
+}

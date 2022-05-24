@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConverteAqui</title>
+    <link rel="stylesheet" href="../../src/layout/converter.css">
+    <script type="module" src="../../src/scripts/converter.js" defer></script>
+
+</head>
+
+<body id="4001">
+
+    <section class="interface">
+
+        <article class="operation">
+            <!--Área de Cálculo de medidas-->
+
+            <header class="cabecalho">
+                <h1>Conversor de Medidas</h1>
+            </header>
+
+            <div class="tela"></div>
+
+            <div class="operating-area">
+                <form class="typing-field">
+                    <input type="number" class="valor" placeholder="Digite um valor">
+                </form>
+                <div class="camp-id">
+                    <span class="de">Unid</span>
+                    <span class="para">Unid</span>
+                </div>
+                <button class="calc">Calcular</button>
+                <button class="reset">Resetar</button>
+            </div>
+
+        </article>
+
+        <article class="seach">
+            <!--Seach-->
+            <button>Conf</button>
+            <br>
+            <form>
+                <label for="campBusca"></label>
+                <input type="text" class="camp-seach" id="campBusca" list="magnitudes" placeholder="Seach">
+            </form>
+            <datalist id="magnitudes"></datalist>
+
+            <button class="trigger">Buscar</button>
+
+            <div class="seach-results"></div>
+
+        </article>
+
+        <div class="content-area"></div>
+
+        <footer class="rodape"></footer>
+    </section>
+    &rarr;
+</body>
+
+</html>

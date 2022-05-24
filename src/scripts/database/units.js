@@ -1,0 +1,26 @@
+
+
+export const unidd = {
+    tempo:["s"],
+    forca:["N"],
+    area:["km²"],
+    pressao:["Pa"],
+    potencia:["W"],
+    volume:["km³"],
+    frequencia:["Hz"],
+    distancia:["km/h"],
+    comprimento:["km"],
+    velocidade:["m/s"],
+    aceleracao:["m/s²"],
+    angulo_plano:["rad"],
+    carga_eletrica:["C"],
+    tensao_eletrica:["V"],
+    corrente_eletrica:["A"],
+    temperatura_celcius:["°C"],
+    intensidade_luminosa:["cd"],
+    resistencia_eletrica:["ohms"],
+    quantidade_de_materia:["mol"],
+    temperatura_termodinamica:["K"],
+    massa:["kg","hg","dag","g","dg","cg","mg"],
+    trabalho_energia_e_quantidade_de_calor:["J"],
+}

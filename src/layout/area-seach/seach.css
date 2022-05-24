@@ -1,0 +1,35 @@
+.seach {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: block;
+    float: left;
+    width: 400px;
+    height: 350px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.seach .camp-seach {
+    padding: 5px;
+}
+
+.seach button#buscar {
+    padding: 5px;
+}
+
+.seach button, .itensUnidd {
+    padding: 7px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    width: 100px;
+}
+
+.seach-results {
+    width: 100%;
+    height: 65%;
+    padding: 5px 0px;
+    overflow: auto;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.377);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
