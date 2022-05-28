@@ -1,7 +1,7 @@
 import { actionTrigger } from "./components/module-seach/trigger.js";
 import { listViewmgt } from "./components/module-seach/toView.js";
 import { actionCalc } from "./components/calc.js";
-import { itensBusca } from "./components/buscar.js";
+import { itensBusca } from "./components/itensBusca/itensSeach.js";
 
 
 const seachUnits = document.querySelector('.trigger');
