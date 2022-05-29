@@ -1,6 +1,15 @@
 
+const display = document.querySelector(".tela");
+const unit01 = document.querySelector(".de");
+const unit02 = document.querySelector(".para");
+
 export const actionCalc = () => {
-  alert("Ok")
+  if (unit01.value || unit02.value == "") {
+    alert("Selecione as unidades para conversão")
+  }else{
+    alert("Funcionou")
+  }
+  
 };
 
 

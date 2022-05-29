@@ -1,7 +1,7 @@
 
 
 const unit01 = document.querySelector(".de");
-const unit02 = document.querySelector(".para");
+const unit02 = document.querySelector(".para"); 
 
 export const itensBusca = () => {
   const bots = document.querySelectorAll("#colun01");
