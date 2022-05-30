@@ -1,0 +1,23 @@
+{
+  "name": "convertaqui",
+  "version": "1.0.0",
+  "description": "Conversor de unidades básico",
+  "main": "converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroSilva-element/ConvertAqui.git"
+  },
+  "author": "Pedro Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroSilva-element/ConvertAqui/issues"
+  },
+  "homepage": "https://github.com/PedroSilva-element/ConvertAqui#readme",
+  "dependencies": {
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6"
+  }
+}

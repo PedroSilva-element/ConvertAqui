@@ -1,37 +1,21 @@
+//import values from "../database/values";
 
-import { unidd } from "../database/units.js";
 const display = document.querySelector(".tela");
 const unit01 = document.querySelector(".de");
 const unit02 = document.querySelector(".para");
-let mss = Object.values(unidd)
 
-export function comp() {
-
-  for (let n = 0; n <= mss.length; n++) {
-
-    mss.forEach((m) => {
-
-      console.log(`
-      ${m[0]} > ${m[1]}, ${m[1]} < ${m[0]}, ${m[2]} < ${m[0]}, ${m[3]} < ${m[0]}, ${m[4]} < ${m[0]}, ${m[5]} < ${m[0]} 
-      ${m[0]} > ${m[2]}, ${m[1]} > ${m[2]}, ${m[2]} < ${m[1]}, ${m[3]} < ${m[1]}, ${m[4]} < ${m[1]}, ${m[5]} < ${m[1]}
-      ${m[0]} > ${m[3]}, ${m[1]} > ${m[3]}, ${m[2]} > ${m[3]}, ${m[3]} < ${m[2]}, ${m[4]} < ${m[2]}, ${m[5]} < ${m[2]}
-      ${m[0]} > ${m[4]}, ${m[1]} > ${m[4]}, ${m[2]} > ${m[4]}, ${m[3]} > ${m[4]}, ${m[4]} < ${m[3]}, ${m[5]} < ${m[3]}
-      ${m[0]} > ${m[5]}, ${m[1]} > ${m[5]}, ${m[2]} > ${m[5]}, ${m[3]} > ${m[5]}, ${m[4]} > ${m[5]}, ${m[5]} < ${m[4]}
-      ${m[0]} > ${m[6]}, ${m[1]} > ${m[6]}, ${m[2]} > ${m[6]}, ${m[3]} > ${m[6]}, ${m[4]} > ${m[6]}, ${m[5]} > ${m[6]}
-      `)
-    })
-    break
-  }
-}
 
 export const actionCalc = () => {
   if (unit01.value == "" || unit02.value == "") {
-    console.log("Dados inválidos!!")
+    display.innerHTML = "Dados inválidos!!"
   } else {
     if (unit01.value > unit02.value) {
-      console.log("A unidade maior é:" + unit01.value)
-    } else {
-      console.log("A unidade maior é:" + unit02.value)
+      display.innerHTML = `A unidade maior é:  ${unit01.value}`
+    }
+    if (unit02.value > unit01.value) {
+      display.innerHTML = `A unidade maior é:  ${unit02.value}`
+      
+    }{
     }
   }
 };

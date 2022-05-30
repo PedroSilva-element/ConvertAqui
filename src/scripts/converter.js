@@ -2,17 +2,16 @@ import { actionTrigger } from "./components/module-seach/trigger.js";
 import { listViewmgt } from "./components/module-seach/toView.js";
 import { actionCalc } from "./components/calc.js";
 import { itensBusca } from "./components/itensBusca/itensSeach.js";
-import { comp } from "./components/calc.js";
-
-
+//import values from "./database/values.js";
+import rules from "./database/rules.js";
 
 const seachUnits = document.querySelector('.trigger');
 const botCalc = document.querySelector(".calc");
 
 window.onload = function () {
         listViewmgt();
-        comp()
-
+        console.log(rules());
+        
 }
 
 //Seach!!
