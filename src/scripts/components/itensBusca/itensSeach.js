@@ -10,15 +10,14 @@ export const itensBusca = () => {
   bots.forEach((n) => {
     let val01 = n.value
     n.addEventListener("click", () => {
-      unit01.innerHTML = val01
+      unit01.value = val01
     });
   });
 
   bots02.forEach((n2) => {
     let val02 = n2.value
     n2.addEventListener("click", () => {
-      unit02.innerHTML = val02
+      unit02.value = val02
     });
   });
-
 };
