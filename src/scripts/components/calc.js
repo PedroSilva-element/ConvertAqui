@@ -1,22 +1,51 @@
-//import values from "../database/values";
+import values from "../database/values.js";
 
 const display = document.querySelector(".tela");
+const enterVelue = document.querySelector(".valor")
 const unit01 = document.querySelector(".de");
 const unit02 = document.querySelector(".para");
-
+const keys = Object.keys(values);
+const keys02 = Object.keys(values);
 
 export const actionCalc = () => {
+
   if (unit01.value == "" || unit02.value == "") {
-    display.innerHTML = "Dados inválidos!!"
+    display.innerHTML = "Dados inválidos!!";
   } else {
-    if (unit01.value > unit02.value) {
-      display.innerHTML = `A unidade maior é:  ${unit01.value}`
+
+    if (values[unit01.value] < values[unit02.value]) {
+
+      console.log(values[unit01.value])
+    }else {
+ 
+      console.log(unit02.value)
     }
-    if (unit02.value > unit01.value) {
-      display.innerHTML = `A unidade maior é:  ${unit02.value}`
-      
-    }{
-    }
+
+    // console.log(values[unit01.value])
+    // console.log(values[unit02.value])
+
+    // for (const i in values) {
+    //   for (const n in keys) {
+    //     keys[n] = values[keys[n]]
+    //     if (unit01.value == keys[n]) {
+        
+    //       for (const m in keys02) {
+    //         if (unit02.value = keys02[m]) {
+    //           if (unit01.value > unit02.value) {
+    //             //Multiplicação
+
+    //             display.innerHTML = enterVelue.value * values[keys[n]]
+    //           } else if (unit01.value < unit02.value) {
+    //             //Divisão
+
+    //             display.innerHTML = enterVelue.value / values[keys[n]]
+
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
 };
 
