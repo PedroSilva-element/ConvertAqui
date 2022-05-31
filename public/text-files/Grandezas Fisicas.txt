@@ -4,11 +4,10 @@ uma escala pré-definida. Em outras palavras, medir uma grandeza física é comp
 outra grandeza de mesma espécie, que é a unidade de medida. Verifica-se, então, quantas
 vezes a unidade está contida na grandeza que está sendo medida. Nas medições, as
 grandezas sempre devem vir acompanhadas de unidades.
-Por exemplo, o comprimento de uma corda pode ser medida em metros. Quando de
-diz que um determinado pedaço de corda tem 3 m de coprimento, significa dizer que esta
+Por exemplo, o comprimento de uma corda pode ser medida em metros. Quando se
+diz que um determinado pedaço de corda tem 3 m de comprimento, significa dizer que esta
 corda pode ser dividida em 3 pedaços de 1 metro, onde 1 metro é a unidade. Por outro lado,
 este mesmo pedaço de corda pode ser dividido em 300 pedaços de 1 centímetro, onde 1
-centímetro também é uma unidade. Em ambos os casos, a grandeza física é a mesma:
-3
-“comprimento da corda”, embora as unidades sejam distintas. Outros exemplos de grandezas
+centímetro também é uma unidade. Em ambos os casos, a grandeza física é a mesma: “comprimento da corda”, embora as unidades sejam distintas. 
+Outros exemplos de grandezas: 
 físicas: massa, temperatura, velocidade, etc.
