@@ -1,51 +1,30 @@
 import values from "../database/values.js";
 
-const display = document.querySelector(".tela");
-const enterVelue = document.querySelector(".valor")
-const unit01 = document.querySelector(".de");
-const unit02 = document.querySelector(".para");
-const keys = Object.keys(values);
-const keys02 = Object.keys(values);
+export const display = document.querySelector(".tela");
+export const enterValue = document.querySelector(".valor")
+export const unit01 = document.querySelector(".de");
+export const unit02 = document.querySelector(".para");
+
 
 export const actionCalc = () => {
 
-  if (unit01.value == "" || unit02.value == "") {
+  if (unit01.value == "" || unit02.value == "" || enterValue == "") {
     display.innerHTML = "Dados inválidos!!";
   } else {
+    const valorDigitado = Number(enterValue.value)
+    const baseValue1 = Number(values[unit01.value])
+    const baseValue2 = Number(values[unit02.value])
 
-    if (values[unit01.value] < values[unit02.value]) {
+    if (baseValue1 > baseValue2) {
+      //Do maior para o menor
+      //Multiplicação
 
-      console.log(values[unit01.value])
-    }else {
- 
-      console.log(unit02.value)
+      baseValue2 < values.m ? display.innerHTML = valorDigitado * baseValue1 * -(baseValue2) : display.innerHTML = valorDigitado * baseValue1 * baseValue2;    } else if (baseValue1 < baseValue2) {
+      //Do menor para o maior
+      //Divisão
+
+      baseValue1 < values.m ? display.innerHTML = valorDigitado / baseValue1 / -(baseValue2) : display.innerHTML = valorDigitado / baseValue1 / baseValue2;
     }
-
-    // console.log(values[unit01.value])
-    // console.log(values[unit02.value])
-
-    // for (const i in values) {
-    //   for (const n in keys) {
-    //     keys[n] = values[keys[n]]
-    //     if (unit01.value == keys[n]) {
-        
-    //       for (const m in keys02) {
-    //         if (unit02.value = keys02[m]) {
-    //           if (unit01.value > unit02.value) {
-    //             //Multiplicação
-
-    //             display.innerHTML = enterVelue.value * values[keys[n]]
-    //           } else if (unit01.value < unit02.value) {
-    //             //Divisão
-
-    //             display.innerHTML = enterVelue.value / values[keys[n]]
-
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
   }
 };
 
